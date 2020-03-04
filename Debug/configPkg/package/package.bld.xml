@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/am335x_app_bbbam335x_pa8fg.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="/home/ruan/ti/pdk_am335x_1_0_9/packages/ti/drv/gpio/test/led_blink/am335x/armv7/bios/am335x_app_bbbam335x.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/am335x_app_bbbam335x_pa8fg.mak" src="package.bld"/>
+        <srcFile name="package/cfg/am335x_app_bbbam335x_pa8fg.oa8fg.dep" src="package/cfg/am335x_app_bbbam335x_pa8fg.c"/>
+        <srcFile name="package/cfg/am335x_app_bbbam335x_pa8fg.dep" src="package/cfg/am335x_app_bbbam335x_pa8fg.cfg"/>
+        <srcFile name="package/cfg/am335x_app_bbbam335x.xa8fg.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="gnu.targets.arm.A8F"
+            version="gnu.targets.arm.A8F{1,0,6.3,1"
+            rawVersion="6.3.1"
+            platform="ti.platforms.evmAM3359"
+            isa="v7A"
+            suffix="a8fg"
+            rootDir="/home/ruan/ti/gcc-arm-none-eabi-6-2017-q1-update"
+            os="undefined"
+            rts="gnu.targets.arm.rtsv7A">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="am335x_app_bbbam335x"
+        pname="am335x_app_bbbam335x.pa8fg"
+        target="gnu.targets.arm.A8F"
+        platform="ti.platforms.evmAM3359"
+        profile="debug"
+        isPartial="false"
+        xCfgScript="package/cfg/am335x_app_bbbam335x_pa8fg.cfg"
+        xCfgPrefix="package/cfg/am335x_app_bbbam335x_pa8fg"
+        cfgScript="/home/ruan/ti/pdk_am335x_1_0_9/packages/ti/drv/gpio/test/led_blink/am335x/armv7/bios/am335x_app_bbbam335x.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="am335x_app_bbbam335x"
+        pname="am335x_app_bbbam335x.xa8fg"
+        target="gnu.targets.arm.A8F"
+        platform="ti.platforms.evmAM3359"
+        profile="debug"
+        xCfgScript="package/cfg/am335x_app_bbbam335x_pa8fg.cfg"
+        xCfgPrefix="package/cfg/am335x_app_bbbam335x_pa8fg"
+        cfgScript="/home/ruan/ti/pdk_am335x_1_0_9/packages/ti/drv/gpio/test/led_blink/am335x/armv7/bios/am335x_app_bbbam335x.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="am335x_app_bbbam335x.xa8fg"
+        args=""
+        groupName="am335x_app_bbbam335x.xa8fg"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

@@ -1,0 +1,1 @@
+"./GPIO_bbbAM335x_board.o" "./GPIO_log.o" "./GPIO_soc.o" "./I2C_soc.o" "./UART_soc.o" "./convert.o" "./ftoa.o" "./main_led_blink.o" -Wl,-T"configPkg/linker.cmd" -Wl,--start-group -lrdimon -lgcc -lm -lnosys -lc -Wl,--end-group 
